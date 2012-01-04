@@ -31,7 +31,7 @@ define(function() {
     function allocateArray(n) {
         return new Array(n);
     }
-    
+
     /**
      * Use freeze if it exists
      * @function
@@ -712,7 +712,7 @@ define(function() {
     ? define
     : function (factory) { typeof module != 'undefined'
         ? (module.exports = factory())
-        : (this.when      = factory());
+        : (this.W         = factory());
     }
     // Boilerplate for AMD, Node, and browser global
 );
